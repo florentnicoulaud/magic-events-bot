@@ -48,10 +48,8 @@ module.exports = {
 							.addFields(
 								{ name: '\:house: Où', value: `${store.name}`, inline: true },
 								{ name: '\:clock10: Quand', value: `${new Intl.DateTimeFormat('fr-FR', { dateStyle: 'full', timeStyle: 'short' }).format(new Date(e.startDatetime))}`, inline: true },
-								{ name: ' ', value: ' ' },
 								{ name: '\:black_joker: Format', value: `${e.format}`, inline: true },
-								{ name: '\:family_man_girl_boy: Capacité', value: `${e.capacity}`, inline: true },
-								{ name: ' ', value: ' ' }
+								{ name: '\:family_man_girl_boy: Capacité', value: `${e.capacity}`, inline: true }
 							)
 							.addFields({ name: 'Description', value: `${e.description}` },
 								{ name: ' ', value: ' ' }
