@@ -34,7 +34,7 @@ client.on(Events.InteractionCreate, async interaction => {
 	if (!interaction.isChatInputCommand()) return;
 
 	const command = client.commands.get(interaction.commandName);
-    console.log(`Getting client command : ${interaction.commandName}`)
+    console.log(`Getting client command : ${interaction.commandName} from ${interaction.guild}#${interaction.channel.name}:${interaction.user.username}`)
 
 	if (!command) return;
 
