@@ -5,6 +5,9 @@ const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 
 dotenv.config();
 
+// add timestamps in front of log messages
+require('console-stamp')(console, 'yyyy-mm-dd HH:MM:ss');
+
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
