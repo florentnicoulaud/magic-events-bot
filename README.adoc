@@ -9,7 +9,7 @@ https://discord.com/api/oauth2/authorize?client_id=1072501192535588985&permissio
 
 == .env
 You need to create a *.env* file to set variables.
-[code, env]
+[source, env]
 DISCORD_TOKEN=<your-secret-discord-token>
 CLIENT_ID=<your-bot-public-id>
 GUILD_ID=<the-guild-id-you-want-to-deploy-to>
@@ -17,11 +17,11 @@ GUILD_ID=<the-guild-id-you-want-to-deploy-to>
 == Start the bot
 
 === Dev mode
-[code, bash]
+[source, bash]
 $ npm start
 
 === Production
-[code, bash]
+[source, bash]
 $ node index.js
 
 === Deploy
@@ -29,6 +29,6 @@ You also need to deploy to each guild to have auto-completion and bot documentat
 
 First, edit the variable named GUILD_ID in your *.env*, then:
 
-[code, bash]
+[source, bash]
 $ node deploy-command.js
 
