@@ -9,7 +9,7 @@ dotenv.config();
 require('console-stamp')(console, 'yyyy-mm-dd HH:MM:ss');
 
 // Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({ autoReconnect:true, intents: [GatewayIntentBits.Guilds] });
 
 // Load commands
 client.commands = new Collection();
