@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  mtg:
+    build:
+      context: .
+      dockerfile: Dockerfile
